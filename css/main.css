@@ -122,10 +122,18 @@ input[type="text"]:focus {
   font-size: 2rem;
   color: #4f7df3;
   padding-top: 8rem;
+  cursor: pointer;
 }
 
 .social-media > * {
   padding: 0 .5rem;
+}
+
+.social-media .fab:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 @media (min-width: 650px) {
