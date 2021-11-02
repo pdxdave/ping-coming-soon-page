@@ -95,9 +95,15 @@ input[type="text"]{
     font-size: 2rem;
     color: $blue;
     padding-top: 8rem;
+    cursor: pointer;
 
     & > * {
         padding: 0 .5rem;
+    }
+
+    .fab:hover {
+        filter: brightness(50%);
+        transition: .3s ease-in-out;
     }
 }
 
