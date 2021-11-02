@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+::-webkit-input-placeholder {
+  color: #969696;
+}
+
+:-ms-input-placeholder {
+  color: #969696;
+}
+
+::-ms-input-placeholder {
+  color: #969696;
+}
+
+::placeholder {
+  color: #969696;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+main > p {
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1rem 0 2.5rem 0;
+}
+
+.logo {
+  width: 65px;
+  padding: 4rem 0rem 3rem 0rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #969696;
+}
+
+h1 span {
+  font-weight: 700;
+  color: black;
+}
+
+.input-wrapper {
+  border: 1px solid #c2d3ff;
+  border-radius: 30px;
+  position: relative;
+  height: 44px;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.input-wrapper.active {
+  border: 1px solid #ff5263;
+}
+
+input[type="text"] {
+  margin: 12px 0px 0px 0px;
+  top: 2px;
+  font-size: .8rem;
+  border: none;
+  background-color: transparent;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: .9rem 0;
+  border-radius: 30px;
+  border: none;
+  background-color: #4f7df3;
+  color: white;
+  margin: 2em 0 3em 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: .7rem;
+  color: #969696;
+}
+
+.error-msg {
+  padding-top: .25rem;
+  font-size: .8rem;
+  color: #ff5263;
+  visibility: hidden;
+}
+
+.show-error {
+  visibility: visible;
+}
+
+.social-media {
+  font-size: 2rem;
+  color: #4f7df3;
+  padding-top: 8rem;
+}
+
+.social-media > * {
+  padding: 0 .5rem;
+}
+
+@media (min-width: 650px) {
+  main {
+    width: 670px;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn {
+    width: 170px;
+    display: inline;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+  .input-wrapper {
+    width: 460px;
+  }
+  .error-msg {
+    text-align: left;
+    padding-left: 2rem;
+  }
+}

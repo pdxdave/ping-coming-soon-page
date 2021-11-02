@@ -1,0 +1,129 @@
+@import 'reset';
+@import 'variables';
+
+body {
+    font-family: $ff;
+    font-size: 20px;
+}
+::placeholder {
+    color: $gray;
+}
+img {
+    width: 100%;
+}
+main {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    text-align: center;
+
+    > p {
+        font-weight: $light;
+        font-size: 1rem;
+        padding: 1rem 0 2.5rem 0;
+    }
+}
+
+.logo {
+    width: 65px;
+    padding: 4rem 0rem 3rem 0rem;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: $light;
+    color: $gray;
+
+    span {
+       font-weight: $bold; 
+       color: black;
+    }
+}
+.input-wrapper {
+    border: 1px solid $pale-blue;
+    border-radius: 30px;
+    position: relative;
+    height: 44px;
+    text-align: left;
+    padding-left: 2rem;
+
+    &.active {
+        border: 1px solid $light-red;
+    }
+
+}
+input[type="text"]{
+    margin: 12px 0px 0px 0px;
+    top: 2px;
+    font-size: .8rem;
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+        outline: none;
+    }
+}
+.btn {
+    width: 100%;
+    padding: .9rem 0;
+    border-radius: 30px;
+    border: none;
+    background-color: $blue;
+    color: white;
+    margin: 2em 0 3em 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.copyright {
+    font-size: .7rem;
+    color: $gray;
+}
+.error-msg {
+    padding-top: .25rem;
+    font-size: .8rem;
+    color: $light-red;
+    visibility: hidden;
+}
+.show-error {
+    visibility: visible;
+}
+.social-media {
+    font-size: 2rem;
+    color: $blue;
+    padding-top: 8rem;
+
+    & > * {
+        padding: 0 .5rem;
+    }
+}
+
+
+@media (min-width: 650px){
+    main {
+     width: 670px;   
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+    }
+    .btn {
+        width: 170px;
+        display: inline;
+        margin-top: 0;
+        margin-left:  1rem;
+        
+    }
+    .input-wrapper {
+        width: 460px;
+    }
+
+    .error-msg {
+        text-align: left;
+        padding-left: 2rem;
+    }
+}
